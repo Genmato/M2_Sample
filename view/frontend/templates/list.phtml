@@ -1,0 +1,13 @@
+<p><?php echo $this->getHeader();?></p>
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Title</td>
+    </tr>
+    <?php foreach($block->getDemoItems() as $item): ?>
+    <tr>
+        <td><?php echo $item->getId(); ?></td>
+        <td><?php echo $item->getTitle();?></td>
+    </tr>
+    <?php endforeach; ?>
+</table>
