@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Genmato_Sample
+ *
+ * @package Genmato_Genmato_Sample
+ * @author  Vladimir Kerkhoff <support@genmato.com>
+ * @created 2015-12-21
+ * @copyright Copyright (c) 2015 Genmato BV, https://genmato.com.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_order_place_after">
+        <observer name="sample" instance="Genmato\Sample\Observer\PlaceOrder"/>
+    </event>
+</config>
