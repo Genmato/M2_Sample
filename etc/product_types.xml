@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Sample
+ *
+ * @package Genmato_Sample
+ * @author  Vladimir Kerkhoff <support@genmato.com>
+ * @created 2015-12-22
+ * @copyright Copyright (c) 2015 Genmato BV, https://genmato.com.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Catalog:etc/product_types.xsd">
+    <type name="demo" label="Demo Product" modelInstance="Genmato\Sample\Model\Product\Type\Demo" indexPriority="80" sortOrder="80">
+        <priceModel instance="Genmato\Sample\Model\Product\Type\Demo\Price" />
+        <customAttributes>
+            <attribute name="refundable" value="true"/>
+            <attribute name="taxable" value="true"/>
+        </customAttributes>
+    </type>
+</config>

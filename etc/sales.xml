@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Sample
+ *
+ * @package Genmato_Sample
+ * @author  Vladimir Kerkhoff <support@genmato.com>
+ * @created 2015-12-22
+ * @copyright Copyright (c) 2015 Genmato BV, https://genmato.com.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Sales:etc/sales.xsd">
+    <order>
+        <available_product_type name="demo"/>
+    </order>
+</config>
