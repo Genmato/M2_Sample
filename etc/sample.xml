@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Sample
+ *
+ * @package Genmato_Sample
+ * @author  Vladimir Kerkhoff <support@genmato.com>
+ * @created 2015-12-22
+ * @copyright Copyright (c) 2015 Genmato BV, https://genmato.com.
+ */
+-->
+<table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:genmato:module:Genmato_Sample:/etc/sample.xsd">
+    <row id="row1">
+        <column id="col1" sort="10" attr1="val1">
+            <label>Col 1</label>
+        </column>
+    </row>
+    <row id="row2">
+        <column id="col1" sort="10" attr1="val1">
+            <label>Col 1</label>
+        </column>
+        <column id="col2" sort="20" disabled="true" attr1="val2" >
+            <label>Col 2</label>
+        </column>
+        <column id="col3" sort="15" attr1="val1">
+            <label>Col 3</label>
+        </column>
+    </row>
+</table>
