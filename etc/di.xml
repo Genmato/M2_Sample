@@ -44,4 +44,10 @@
         <plugin name="sample_after" type="Genmato\Sample\Plugin\AfterPage" sortOrder="1" disabled="false"/>
     </type>
 
+    <preference for="Genmato\Sample\Api\DemoRepositoryInterface"
+                type="Genmato\Sample\Model\ResourceModel\DemoRepository" />
+
+    <preference for="Genmato\Sample\Api\Data\DemoInterface" type="Genmato\Sample\Model\Data\Demo" />
+    <preference for="Genmato\Sample\Api\Data\DemoSearchResultsInterface"
+                type="Magento\Framework\Api\SearchResults" />
 </config>
