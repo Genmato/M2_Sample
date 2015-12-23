@@ -50,4 +50,16 @@
     <preference for="Genmato\Sample\Api\Data\DemoInterface" type="Genmato\Sample\Model\Data\Demo" />
     <preference for="Genmato\Sample\Api\Data\DemoSearchResultsInterface"
                 type="Magento\Framework\Api\SearchResults" />
+
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="demoadd" xsi:type="object">Genmato\Sample\Console\Command\AddCommand</item>
+                <item name="demolist" xsi:type="object">Genmato\Sample\Console\Command\ListCommand</item>
+                <item name="demoget" xsi:type="object">Genmato\Sample\Console\Command\GetCommand</item>
+                <item name="demodelete" xsi:type="object">Genmato\Sample\Console\Command\DeleteCommand</item>
+            </argument>
+        </arguments>
+    </type>
+
 </config>
