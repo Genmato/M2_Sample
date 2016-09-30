@@ -86,7 +86,7 @@ class AddCommand extends Command
 
         try {
             $demo = $this->demoRepository->save($demoRecord);
-            $output->writeln('New record created (id='.$demo->getId().')');
+            $output->writeln('New record created (id='.$demo['demo_id'].')');
         }catch (\Exception $ex) {
             $output->writeln('<error>'.$ex->getMessage().'</error>');
         }
