@@ -40,8 +40,8 @@ class PlaceOrder implements ObserverInterface
         $order = $observer->getEvent()->getOrder();
 
         $demoList = $this->demoFactory->create();
-
-        $demoList->setTitle(__('New order (%1) placed!', $order->getIncrementId()));
+        $demoList->setTitle('demo');
+        $demoList->save();
 
         try {
             $demoList->save();

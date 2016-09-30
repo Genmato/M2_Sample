@@ -15,7 +15,7 @@ use Genmato\Sample\Api\Data\DemoInterface;
 use Genmato\Sample\Api\Data\DemoInterfaceFactory;
 use Genmato\Sample\Api\Data\DemoExtensionInterface;
 use Genmato\Sample\Api\Data\DemoSearchResultsInterfaceFactory;
-use Genmato\Sample\Model\Demo;
+use Genmato\Sample\Model\Demo as DemoModel;
 use Genmato\Sample\Model\ResourceModel\Demo as DemoResource;
 use Genmato\Sample\Model\ResourceModel\Demo\Collection;
 use Genmato\Sample\Api\DemoRepositoryInterface;
@@ -39,7 +39,7 @@ class DemoRepository implements DemoRepositoryInterface
     /** @var DemoInterfaceFactory  */
     private $demoDataFactory;
 
-    /** @var  Demo */
+    /** @var  DemoResource */
     private $demoResourceModel;
 
     /**
@@ -154,7 +154,7 @@ class DemoRepository implements DemoRepositoryInterface
         $collection->setPageSize($searchCriteria->getPageSize());
         /** @var DemoInterface[] $demos */
         $demos = [];
-        /** @var Demo $demo */
+        /** @var DemoModel $demo */
         foreach ($collection as $demo) {
             /** @var DemoInterface $demoDataObject */
             $demoDataObject = $this->demoDataFactory->create()

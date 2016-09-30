@@ -36,6 +36,11 @@
         <plugin name="sample_before" type="Genmato\Sample\Plugin\BeforePage" sortOrder="1" disabled="false"/>
     </type>
 
+
+    <type name="Magento\Cms\Model\Page">
+        <plugin name="sample_before"  sortOrder="88" disabled="false"/>
+    </type>
+
     <type name="Magento\Catalog\Model\Product">
         <plugin name="sample_around" type="Genmato\Sample\Plugin\AroundProduct" sortOrder="1" disabled="false"/>
     </type>
